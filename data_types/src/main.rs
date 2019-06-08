@@ -21,10 +21,10 @@ fn main() {
     println!("The value of five_hundred is: {}", five_hundred);
 
     //arrays are less flexible than vectors
-    let arr: [i32, 5] = [1,2,3,4,5];
+    let arr: [i32; 5] = [1,2,3,4,5];
     //arrays are best for static lists that won't change 
     //because their sizes aren't dynamic in rust
-    let months: [String: 12] = ["January", "February", "March", "April", "May", "June", "July",
+    let months = ["January", "February", "March", "April", "May", "June", "July",
               "August", "September", "October", "November", "December"];
 
     //this makes an array of length 5 where all the elements are 3
