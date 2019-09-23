@@ -11,6 +11,12 @@ fn main() {
     let six = IpAddrKind::V6;
 
     println!("Hello, world!");
+
+    let some_number = Some(5);
+    let some_string = Some("a string");
+
+    //rust doesnt have null but it has the Option enum which has some and none on it
+    let absent_number : Option<i32> = None;
 }
 
 fn route(ip_kind: IpAddrKind) { }
